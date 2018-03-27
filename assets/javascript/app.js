@@ -17,7 +17,6 @@ var topics = [];
           method: "GET"
         }).done(function(response) {
         	var results = response.data;
-		 $("#gifArea").empty();
         	console.log(results);
         	for (var i = 0; i < results.length; i++) {
         	
@@ -37,6 +36,7 @@ var topics = [];
         	showDiv.append(p);
         	showDiv.append(showImage);
         	$("#gifArea").prepend(showDiv);
+		$("#gifArea").empty();
 
         }
 	});
