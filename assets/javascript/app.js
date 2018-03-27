@@ -17,6 +17,7 @@ var topics = [];
           method: "GET"
         }).done(function(response) {
         	var results = response.data;
+		 $("#gifArea").empty();
         	console.log(results);
         	for (var i = 0; i < results.length; i++) {
         	
@@ -60,7 +61,7 @@ var topics = [];
       a.attr("data-search", topics[i]);
       a.text(topics[i]);
       $("#myButtons").append(a);
-      $("#gifArea").empty();
+    
     }
   }
 
