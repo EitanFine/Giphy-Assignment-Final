@@ -60,6 +60,7 @@ var topics = [];
       a.attr("data-search", topics[i]);
       a.text(topics[i]);
       $("#myButtons").append(a);
+      $("#gifArea").empty();
     }
   }
 
